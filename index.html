@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Grunt CFD</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: fallback;
+    }
+
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville-Bold.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: fallback;
+    }
+
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville-SemiBold.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: fallback;
+    }
+
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville-BoldItalic.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville-BoldItalic.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: fallback;
+    }
+
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville-SemiBoldItalic.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville-SemiBoldItalic.woff') format('woff');
+        font-weight: 600;
+        font-style: italic;
+        font-display: fallback;
+    }
+
+    @font-face {
+        font-family: 'Elle Baskerville';
+        src: url('./fonts/ElleBaskerville-Italic.woff2') format('woff2'),
+            url('./fonts/ElleBaskerville-Italic.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: fallback;
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <ul class="header__ul">
+            <li><a href="#">Furnitown</a></li>
+            <li><a href="product.html">sản phẩm</a></li>
+            <li><a href="#">dịch vụ</a></li>
+            <li><a href="#" class="hidden"><img src="img/home-footer-logoicon.png" alt=""></a></li>
+            <li><a href="#">dự án</a></li>
+            <li><a href="#">tin tức</a></li>
+            <li><a href="#">liên hệ</a></li>
+        </ul>
+        <div class="header__mobile">
+            <div class="header__mobile-open">
+                <img src="img/menu.svg" alt="">
+                <h2 class="title">menu</h2>
+            </div>
+            <img src="img/home-footer-logoicon.png" alt="">
+        </div>
+    </header>
+    <!-- nav -->
+    <!-- nav desktop -->
+    <nav class="menudesktop">
+        <div class="menudesktop__top">
+            <h2 class="title">Furnitown</h2>
+            <ul>
+                <li class="title">liên kết</li>
+                <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="menudesktop__bottom">
+            <div class="menudesktop__bottom-left">
+                <img src="img/home-slider-menuicon.png" alt="">
+                <img class="close-menu" src="img/cancel.svg" alt="">
+            </div>
+            <ul class="menudesktop__bottom-right">
+                <li><a href="#">Furnitown</a></li>
+                <li><a href="#">sản phẩm</a></li>
+                <li><a href="#">dịch vụ</a></li>
+                <li><a href="#">dự án</a></li>
+                <li><a href="#">tin tức</a></li>
+                <li><a href="#">liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav mobile -->
+    <nav class="menumobile">
+        <ul>
+            <li><a href="#">Furnitown</a></li>
+            <li><a href="#">sản phẩm</a></li>
+            <li><a href="#">dịch vụ</a></li>
+            <li><a href="#">dự án</a></li>
+            <li><a href="#">tin tức</a></li>
+            <li><a href="#">liên hệ</a></li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main class="homepage">
+        <!-- slider -->
+        <div class="slider">
+            <div class="slider__top">
+                <h1 class="title">FurniTown</h1>
+                <h2 class="title">share</h2>
+                <img src="img/arrow-right-black.svg" alt="">
+            </div>
+            <div class="slider__list">
+                <div class="slider__list-item">
+                    <div class="textbox">
+                        <h2 class="titlemain">FurniTown</h2>
+                        <p class="title">Nơi tìm thấy mảnh ghép nội thất còn thiếu cho ngôi nhà của bạn</p>
+                        <a href="#" class="btn title">Về chúng tôi</a>
+                    </div>
+                    <img src="img/home-slider-01.jpg" alt="" class="slider-img">
+                </div>
+            </div>
+            <div class="slider__bottom">
+                <img src="img/home-slider-mouseline.png" alt="" class="mouse-arrow">
+                <img src="img/home-slider-mouse.png" alt="" class="mouse-img">
+                <span class="title">sản phẩm FurniTown</span>
+            </div>
+            <div class="slider__menu">
+               <div class="slider__menu-start">
+                    <img src="img/home-slider-menuicon.png" alt="">
+                    <img src="img/menu.svg" alt="">
+               </div>
+               <div class="slider__menu-end">
+                    <span class="title">menu</span>
+                   <img src="img/logo-full-black" alt="">
+               </div>
+            </div>
+        </div>
+        <!-- mobile textbox -->
+        <div class="mobiletextbox">
+            <h2 class="titlemain">FurniTown</h2>
+            <p class="textmain">Nơi tìm thấy mảnh ghép nội thất còn thiếu cho ngôi nhà của bạn</p>
+            <a href="#" class="btn title">Về chúng tôi</a>
+        </div>
+        <!-- about -->
+        <section class="about homepd">
+            <div class="container">
+                <div class="about__item1">
+                    <div class="about__item1-left">
+                        <div class="item1__left-top">
+                            <p class="text">“ Hãy đến & khám phá Funitown, để có cơ hội thoả sức lựa chọn về 
+                                màu sắc và kiểu dáng trong thế giới nội thất; cùng sự an tâm trong việc
+                                tư vấn chu đáo, tận tình của đội ngũ nhân viên.  ”</p>
+                        </div>
+                        <div class="item1__left-bottom">
+                            <h2 class="title">phòng làm việc</h2>
+                            <div class="about-img">
+                                <img src="img/home-about-01.jpg" alt="" class="about-1">
+                                <div class="about__out">
+                                    <div class="about__out-info">
+                                        <img src="img/home-about-logoicon.png" alt="" title="width: 30px;">
+                                        <h2 class="about-title">"Không gian sáng tạo cho sự thành đạt."</h2>
+                                        <a href="#">more <img src="img/right-arrow.svg" alt=""  class="aboutoutimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item1-right">
+                        <h2 class="title">phòng làm việc</h2>
+                        <div class="about-img">
+                            <img src="img/home-about-02.jpg" alt="" class="about-2">
+                            <div class="about__out">
+                                <div class="about__out-info">
+                                    <img src="img/home-about-logoicon.png" alt="" title="width: 30px;">
+                                    <h2 class="about-title">"Không gian sáng tạo cho sự thành đạt."</h2>
+                                    <a href="#">more <img src="img/right-arrow.svg" alt=""  class="aboutoutimg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item2">
+                    <h2 class="title">nhà bếp</h2>
+                    <div class="about-img">
+                        <img src="img/home-about-03.jpg" alt="" class="about-3">
+                        <div class="about__out">
+                            <div class="about__out-info">
+                                <img src="img/home-about-logoicon.png" alt="" title="width: 30px;">
+                                <h2 class="about-title">"Không gian sáng tạo cho sự thành đạt."</h2>
+                                <a href="#">more <img src="img/right-arrow.svg" alt=""  class="aboutoutimg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item3">
+                    <div class="about__item3-left">
+                        <h2 class="title">phòng ngủ</h2>
+                        <div class="about-img">
+                            <img src="img/about-04.jpg" alt="" class="about-4">
+                            <div class="about__out">
+                                <div class="about__out-info">
+                                    <img src="img/home-about-logoicon.png" alt="" title="width: 30px;">
+                                    <h2 class="about-title">"Không gian sáng tạo cho sự thành đạt."</h2>
+                                    <a href="#">more <img src="img/right-arrow.svg" alt=""  class="aboutoutimg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__item3-right">
+                        <div class="item3__right-top">
+                            <h2 class="title">nhà tắm</h2>
+                            <div class="about-img">
+                                <img src="img/home-about-05.jpg" alt="" class="about-5">
+                                <div class="about__out">
+                                    <div class="about__out-info">
+                                        <img src="img/home-about-logoicon.png" alt="" title="width: 30px;">
+                                        <h2 class="about-title">"Không gian sáng tạo cho sự thành đạt."</h2>
+                                        <a href="#">more <img src="img/right-arrow.svg" alt=""  class="aboutoutimg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item3__right-bottom">
+                            <p class="text">“ Hãy đến & khám phá Funitown, để có cơ hội thoả sức lựa chọn về màu sắc và kiểu dáng trong thế giới nội thất; cùng sự an tâm trong việc tư vấn chu đáo, tận tình của đội ngũ nhân viên. ”</p>
+                            <img src="img/home-about-pen" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <img src="img/home-footer-logoicon.png" alt="">
+            </div>
+            <div class="footer__bottom">
+                <p class="footer-text">Thời gian mở cửa: 8h - 18h  - Thứ 2 đến Chủ nhật</p>
+                <p class="footer-text">Số 7/22A, Ấp 6, xã Đông Thạnh, huyện Hóc Môn, thành phố Hồ Chí Minh</p>
+                <p class="footer-text">Hotline: 0937.168.938</p>
+                <p class="footer-text">Email: noithatfunitown@gmail.com</p>
+            </div>
+            <div class="footer__totop">
+                <h2>back to top</h2>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+    <!-- <script type="text/javascript" src="dest/home.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+.productpage {
+    width: 100%;
+    height: 100%;
+    .productslider {
+        width: 100%;
+        height: 450px;
+        .slider__top {
+            .title {
+                color: $white-cl;
+            }
+        }
+        .productslider__bg {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .productslider-img {
+                @include midimg();
+                width: 100%;
+                height: 100%;
+            }
+            .container {
+                .titlemain {
+                    font-size: 24px;
+                    text-align: right;
+                    @include mid();
+                    line-height: 60px;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .slider__menu {
+            position: absolute;
+            top: 330px;
+            transform: initial;
+            @include md {
+                width: 120px;
+                height: 120px;
+            }
+            @include sm {
+                width: 120px;
+                height: 120px;
+            }
+            @include xs {
+                width: 120px;
+                height: 120px;
+                display: block;
+            }
+        }
+    }
+    .products {
+        .product__item {
+            border-bottom: 1px solid black;
+            padding: 50px 0;
+            position: relative;
+            &-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .product__title-left {
+                    display: flex;
+                    align-items: center;
+                    .number {
+                        font-size: 73px;
+                        font-family: 'Elle Baskerville';
+                        color: #c48b2c;
+                    }
+                    .product-title {
+                        margin-left: 10px;
+                        width: 50%;
+                        .texttitle {
+                            font-size: 18px;
+                            font-family: 'Elle Baskerville';
+                            text-transform: uppercase;
+                        }
+                        .text {
+                            font-size: 12px;
+                            margin-top: 8px;
+                            width:100%;// chiều rộng bằng khối bao nó
+    white-space: pre-wrap; 
+    overflow: hidden; // ẩn các nội dung khi kích thước lớn hơn chiều rộng khối bên ngoài
+    text-overflow: ellipsis; //thêm 3 dấu chấm ở cuối
+    -webkit-line-clamp: 2;// số dòng muốn hiển thị
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+                        }
+                    }
+                }
+                .product__title-right {
+                    a {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        color: $black-cl;
+                        white-space: nowrap;
+                        img {
+                            width: 20px;
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            &-img {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .list__product {
+                    // margin: 50px;
+                    &-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &-info {
+                        margin-top: 30px;
+                        .name {
+                            font-size: 18px;
+                        }
+                        .price {
+                            margin-top: 30px;
+                            font-size: 12px;
+                        }
+                        a {
+                            margin-top: 40px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            color: $black-cl;
+                            text-decoration: none;
+                            img {
+                                width: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                border-bottom: none;
+            }
+            .product-play {
+                position: absolute;
+                bottom: 50px;
+                right: 0;
+                a {
+                    background-color: $black-cl;
+                    padding: 20px;
+                    border-radius: 9999px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
