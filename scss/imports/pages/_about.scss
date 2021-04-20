@@ -1,0 +1,61 @@
+.aboutpage {
+    width: 100%;
+    max-height: 100%;
+    .slider {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        @include xs {
+            height: 60vh;
+        }
+        .container {
+            position: relative;
+            height: 100%;
+        }
+        &__title {
+            width: 100%;
+            text-align: center;
+            // margin-top: 160px;
+            @include xs {
+                padding: 0 20px
+            }
+            @include mid();
+            &-textbox {
+                h1 {
+                    font-family: 'Elle Baskerville';
+                    font-size: 44px;
+                    color: $line-cl;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+            }
+            &-img {
+                margin-top: 30px;
+            }
+        }
+    }
+    .info {
+        &__textbox {
+            text-align: center;
+            padding: 0 100px;
+            // position: relative;
+            p {
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+            img {
+                margin-top: 30px;
+            }
+        }
+        &__about {
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

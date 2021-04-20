@@ -48,6 +48,9 @@ $carousel.flickity({
     contain: false,
     wrapAround: true,
     prevNextButtons: false, 
+    autoPlay: 5000,
+    pauseAutoPlayOnHover: false
+
 })
 $(".slider__btn-prev").on('click', function(e) {
     e.preventDefault()
