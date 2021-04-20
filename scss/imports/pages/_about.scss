@@ -7,6 +7,7 @@
         position: relative;
         @include xs {
             height: 60vh;
+            margin-top: 70px;
         }
         .container {
             position: relative;
@@ -42,11 +43,17 @@
         &__textbox {
             text-align: center;
             padding: 0 100px;
+            @include xs {
+                padding: initial;
+            }
             // position: relative;
             p {
                 font-size: 14px;
-                text-transform: uppercase;
                 line-height: 40px;
+                letter-spacing: 2px;
+                @include xs {
+                    font-size: 11px;
+                }
             }
             img {
                 margin-top: 30px;
@@ -54,8 +61,113 @@
         }
         &__about {
             display: flex;
-            // align-items: center;
             justify-content: space-between;
+            @include xs {
+                display: block;
+                text-align: center;
+            }
+            &-textbox {
+                width: 370px;
+                @include xs {
+                    margin-top: 30px;
+                    width: initial;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 40px;
+                    letter-spacing: 2px;
+                    @include xs {
+                        font-size: 11px;
+                    }
+                }
+            }
+            &-img {
+                margin-top: 100px;
+                @include xs {
+                    margin-top: 30px;
+                }
+            }
         }
+    }
+    .contact {
+        padding: 90px 0;
+        .container {
+            text-align: center;
+        }
+        &__textbox {
+            padding: 0 150px;
+            @include xs {
+                padding: initial;
+            }
+            p {
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 30px;
+            }
+            h4 {
+                margin-top: 30px;
+            }
+            h5 {
+                margin-top: 10px;
+            }
+        }
+        img {
+            margin-top: 60px;
+        }
+        &__btn {
+            margin-top: 30px;
+            p {
+                padding: 0 210px;
+                font-size: 14px;
+                letter-spacing: 2px;
+                line-height: 30px;
+                @include xs {
+                    padding: initial;
+                }
+            }
+            &-a {
+                margin-top: 60px;
+            }
+            .btn-right {
+                padding: 10px 30px;
+                border: 1px solid $black-cl;
+                color: $black-cl;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all $t ease;
+                @include xs {
+                    padding: 10px 10px;
+                }
+                &:hover {
+                    background-color: $black-cl;
+                    color: $white-cl;
+                    transition: all $t ease;
+                }
+            }
+            .btn-left {
+                padding: 10px 40px;
+                color: $black-cl;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-left: 10px;
+                border: 1px solid $black-cl;
+                transition: all $t ease;
+                @include xs {
+                    padding: 10px 20px;
+                }
+                &:hover {
+                    background-color: $black-cl;
+                    color: $white-cl;
+                    transition: all $t ease;
+                }
+            }
+        }
+    }
+}
+.about-footer {
+    height: 400px;
+    margin-top: initial;
+    @include xs {
+        height: 500px;
     }
 }
