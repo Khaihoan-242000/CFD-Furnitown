@@ -24,12 +24,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $bg-cl;
+    background-color: $black-cl;
     z-index: 202;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     transition: all $t ease;
+    // box-shadow: 0px 0px 5px 0px #000000;
     @include md {
         width: 110px;
         height: 110px;
@@ -95,3 +96,5 @@
         }
     }
 }
+
+// Home Products

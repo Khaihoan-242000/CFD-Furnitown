@@ -14,8 +14,8 @@
             transition: all $t ease;
     z-index: 205;
     @include xs {
-        background-color: $bg-cl;
-        height: 80px;
+        background-color: $black-cl;
+        height: 70px;
         opacity: 1;
         -webkit-transform: translateY(0);
                 transform: translateY(0);
@@ -67,6 +67,9 @@
                     -webkit-transition: all $t ease;
                             transition: all $t ease;
                 }
+                &.hidden {
+                    opacity: 1;
+                }
                 &.hidden::before {
                     display: none;
                 }
@@ -109,18 +112,18 @@
             justify-content: space-between;
             align-items: center;
             img {
-                width: 60px;
+                width: 50px;
             }
         }
         &-open {
             display: flex;
             align-items: center;
             img {
-                width: 40px;
+                width: 30px;
             }
             h2 {
                 color: $white-cl;
-                font-size: 18px;
+                font-size: 14px;
                 margin-left: 10px;
             }
         }

@@ -15,6 +15,7 @@ img {
     text-decoration: none;
     border-radius: 8px;
     transition: all $t ease;
+    position: relative;
     @include md {
         padding: 13px 30px;
     }
@@ -31,9 +32,9 @@ img {
         padding: 12px 28px;
     }
     &:hover {
-        background-color: $bg-cl;
+        background-color: $line-cl;
         transition: all $t ease;
-    }
+    } 
 }
 .homepd {
     padding: 170px 0;
@@ -44,6 +45,8 @@ img {
 .productpd {
     padding: 90px 0;
 }
+
+
 .menudesktop {
     position: fixed;
     left: 0;
@@ -51,12 +54,12 @@ img {
     z-index: 205;
     width: 400px;
     height: 100vh;
-    background-color: $bg-cl;
+    background-color: $black-cl;
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: all $t ease;
-            transition: all $t ease;
+    -webkit-transition: all $t $cubic;
+            transition: all $t $cubic;
     @include xs {
         width: 100%;
     }
@@ -156,55 +159,11 @@ img {
         opacity: 1;
         -webkit-transform: translateX(0);
                 transform: translateX(0);
-        -webkit-transition: all $t ease;
-                transition: all $t ease;
+        -webkit-transition: all $t $cubic;
+                transition: all $t $cubic;
     }   
 }
 
-
-.menumobile {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: $bg-cl;
-    z-index: 206;
-    // margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: all $t ease;
-            transition: all $t ease;
-    ul {
-        width: 100%;
-        li {
-            width: 100%;
-            height: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            a {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                color: $white-cl;
-                font-size: 24px;
-                font-family: 'Elle Baskerville';
-                text-transform: uppercase;
-                text-decoration: none;
-            }   
-        }
-    }
-    &.active {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        -webkit-transition: all $t ease;
-                transition: all $t ease;
-    } 
-}
 
 // title main
 .titlemain {

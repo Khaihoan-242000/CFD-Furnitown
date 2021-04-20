@@ -29,8 +29,9 @@ closeMenuDesTop.addEventListener('click', function(e) {
 document.addEventListener('click', function(){
     menuDeskTop.classList.remove('active')
 })
-openMenuMobile.addEventListener('click', function() {
-    menuMobile.classList.toggle('active')
+openMenuMobile.addEventListener('click', function(e) {
+    e.stopPropagation()
+    menuDeskTop.classList.add('active')
 })
 
 toTop.addEventListener('click', function() {
@@ -38,4 +39,22 @@ toTop.addEventListener('click', function() {
         top: 0,
         behavior: 'smooth'
       })
+})
+// home slider
+
+let $carousel = $(".slider__list")
+$carousel.flickity({
+    cellAlign: 'left',
+    contain: false,
+    wrapAround: true,
+    prevNextButtons: false, 
+})
+$(".slider__btn-prev").on('click', function(e) {
+    e.preventDefault()
+    $carousel.flickity('previous')
+    console.log('ok')
+})
+$(".slider__btn-next").on('click', function(e) {
+    e.preventDefault()
+    $carousel.flickity('next')
 })
